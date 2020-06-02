@@ -142,7 +142,7 @@ CSsimuw.one<-function(CS,ra0,simu.neutral,simu.niche,Env,tpoint){
   
   D1<-matrix(0,nrow=nrow(simu.neutral),ncol=ncol(simu.neutral))
   for(i in 1:ncol(simu.neutral)){
-    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.6,max=1),runif(1,min = 0,max=0.4))
+    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.55,max=1),runif(1,min = 0,max=0.45))
     D1[,i]=simu.neutral[,i]*sto+simu.niche[,i]*(1-sto)
   }
   D1[D1<0]<-0
