@@ -152,7 +152,7 @@ CSsimu.one<-function(k,CS){
   D3<-matrix(0,nrow=nrow(D3simu.neutral),ncol=ncol(D3simu.neutral))
   
   for(i in 1:ncol(D1simu.neutral)){
-    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.6,max=1),runif(1,min = 0,max=0.4))
+    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.55,max=1),runif(1,min = 0,max=0.45))
     D1[,i]=D1simu.neutral[,i]*sto+D1simu.niche[,i]*(1-sto)
     D2[,i]=D2simu.neutral[,i]*sto+D2simu.niche[,i]*(1-sto)
     D3[,i]=D3simu.neutral[,i]*sto+D3simu.niche[,i]*(1-sto)
@@ -242,7 +242,7 @@ CSsimuw.one<-function(j,CS){
   D3<-matrix(0,nrow=nrow(D3simu.neutral),ncol=ncol(D3simu.neutral))
   
   for(i in 1:ncol(D1simu.neutral)){
-    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.6,max=1),runif(1,min = 0,max=0.4))
+    sto<-ifelse((i %in% sspecies.id),runif(1,min = 0.55,max=1),runif(1,min = 0,max=0.45))
     D1[,i]=D1simu.neutral[,i]*sto+D1simu.niche[,i]*(1-sto)
     D2[,i]=D2simu.neutral[,i]*sto+D2simu.niche[,i]*(1-sto)
     D3[,i]=D3simu.neutral[,i]*sto+D3simu.niche[,i]*(1-sto)
