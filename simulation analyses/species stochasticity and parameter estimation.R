@@ -1,6 +1,4 @@
 
-setwd("~/Dropbox/bioreactor/neutral modeling/new model/3_manuscript/20200115/R code")
-
 
 otutab<-read.csv("otutab.csv",row.names = 1,check.names = F)
 env<-read.csv("env.csv",row.names = 1)
